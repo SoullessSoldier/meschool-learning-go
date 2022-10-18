@@ -1,0 +1,10 @@
+@import "normalize.css";
+@import "default.css";
+/*@import "header.css";*/
+@import "hero.css";
+@import "rooms.css";
+@import "booking.css";
+@import "about.css";
+@import "reviews.css";
+@import "faq.css";
+@import "footer.css";

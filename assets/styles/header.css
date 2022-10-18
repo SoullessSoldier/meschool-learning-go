@@ -1,0 +1,23 @@
+.header {
+  padding: 20px 0;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+}

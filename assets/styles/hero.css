@@ -1,0 +1,35 @@
+.hero {
+  padding-top: 146px;
+}
+
+.hero .container {
+  position: relative;
+  min-height: 823px;
+}
+
+.hero .container::before {
+  content: "";
+  width: 675px;
+  height: 762px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url("../images/banner.png") no-repeat;
+}
+
+.hero__text {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 100%;
+  letter-spacing: -0.1em;
+  text-transform: uppercase;
+}
+
+.hero__subtext {
+  margin: 0 0 0 100px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 179%;
+}
