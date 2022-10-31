@@ -1,7 +1,8 @@
 @import "normalize.css";
 @import "default.css";
-/*@import "header.css";*/
+@import "header.css";
 @import "hero.css";
+@import "features.css";
 @import "rooms.css";
 @import "booking.css";
 @import "about.css";

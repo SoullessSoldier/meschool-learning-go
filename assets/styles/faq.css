@@ -9,6 +9,7 @@
   padding: 21px 70px 20px;
   margin-bottom: 20px;
   line-height: 46px;
+  cursor: pointer;
 }
 
 .section-faq__list-item:after {

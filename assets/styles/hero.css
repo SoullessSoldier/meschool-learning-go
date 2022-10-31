@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 146px;
+  padding-top: 25px;
 }
 
 .hero .container {
@@ -13,8 +13,8 @@
   height: 762px;
   position: absolute;
   bottom: 0;
-  right: 0;
-  background: url("../images/banner.png") no-repeat;
+  right: 30px;
+  background: url("../images/banner.png") right/contain no-repeat;
 }
 
 .hero__text {
@@ -28,8 +28,58 @@
 }
 
 .hero__subtext {
-  margin: 0 0 0 100px;
+  margin: 0 0 30px 100px;
   font-weight: 400;
   font-size: 28px;
   line-height: 179%;
+}
+
+.hero__features {
+  display: flex;
+  gap: 40px;
+}
+
+.hero__feature {
+  padding: 25px 0 150px;
+  max-width: 195px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.hero__feature-title {
+  color: #cd06ff;
+  font-size: 75px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.hero__feature-title_font_size_100 {
+  font-size: 100px;
+}
+
+.hero__feature-text {
+  font-size: 30px;
+  text-align: center;
+}
+
+.btn-booking {
+  padding: 25px 69px;
+  font-size: 26px;
+  font-weight: 700;
+  background-color: #6c0287;
+  color: #fff;
+  border: 0;
+  outline: 1px solid transparent;
+  text-decoration: none;
+}
+
+.hero__link-down {
+  position: absolute;
+  left: calc(50% - 30px);
+  bottom: 90px;
+  color: #fff;
+  text-decoration: none;
 }

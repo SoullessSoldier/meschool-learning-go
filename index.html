@@ -1,319 +1,504 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta charset="UTF-8">
-  <title>Проект GAME OVER</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="assets/images/favicon/site.webmanifest">
-  <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="assets/styles/index.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Проект GAME OVER</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="assets/styles/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <img src="assets/images/logo.svg" alt="Логотип" />
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#rooms">Залы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#about">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#booking">Бронь</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#reviews">Отзывы</a>
+              </li>
+              <!-- <li class="nav__item"><a class="nav__link" href="#faq">Частые вопросы</a></li> -->
+              <li class="nav__item">
+                <a class="nav__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn btn-order-call" type="button">
+            Заказать звонок
+          </button>
+        </div>
+      </div>
+    </header>
 
-<!-- Раньше в макете GO этот блок был, но в Фигме его нет
-<header class="header">
-  <div class="container">
-    <div class="header__wrapper">
-      <img src="assets/images/logo.svg" alt="Логотип">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#rooms">Залы</a></li>
-          <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
-          <li class="nav__item"><a class="nav__link" href="#booking">Бронь</a></li>
-          <li class="nav__item"><a class="nav__link" href="#reviews">Отзывы</a></li>
-          <li class="nav__item"><a class="nav__link" href="#faq">Частые вопросы</a></li>
-          <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
+    <main class="main">
+      <section class="section hero" id="banner">
+        <div class="container">
+          <h1 class="hero__text">Game over</h1>
+          <p class="hero__subtext">Новый формат игр и отдыха</p>
+          <div class="hero__features">
+            <div class="hero__feature">
+              <div
+                class="hero__feature-title hero__feature-title_font_size_100"
+              >
+                4
+              </div>
+              <div class="hero__feature-text">Тематических зала</div>
+            </div>
+            <div class="hero__feature">
+              <div class="hero__feature-title">new</div>
+              <div class="hero__feature-text">Новейшая аппаратура</div>
+            </div>
+          </div>
+          <a href="#booking" class="btn btn-booking" type="button"
+            >Забронировать</a
+          >
+          <a href="#features" class="hero__link-down">
+            <svg
+              width="97"
+              height="97"
+              viewBox="0 0 97 97"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="48.5" cy="48.5" r="48" stroke="currentColor" />
+              <rect
+                x="34.4255"
+                y="43.9162"
+                width="1.82001"
+                height="20.0201"
+                transform="rotate(-44.9975 34.4255 43.9162)"
+                fill="currentColor"
+              />
+              <rect
+                x="48.5807"
+                y="58.0737"
+                width="1.82001"
+                height="20.0201"
+                transform="rotate(-134.997 48.5807 58.0737)"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
 
-  </div>
-</header>
--->
+      <section class="section" id="features">
+        <div class="container features">
+          <h2 class="block-title">
+            У нас есть всё для классного отдыха с друзьями!
+          </h2>
+          <div class="features__wrapper">
+            <div class="features__card">
+              <div class="features__card-image">
+                <img src="assets/images/vr.jpg" alt="VR очки" />
+              </div>
+              <div class="features__card-title">VR очки</div>
+            </div>
+            <div class="features__card">
+              <div class="features__card-image">
+                <img src="assets/images/audio.jpg" alt="Аудиосистема" />
+              </div>
+              <div class="features__card-title">
+                Аудио-система 5.1 с&nbsp;отличным звуком
+              </div>
+            </div>
+            <div class="features__card">
+              <div class="features__card-image">
+                <img src="assets/images/micro.jpg" alt="Караоке" />
+              </div>
+              <div class="features__card-title">Караоке (4 микрофона)</div>
+            </div>
+            <div class="features__card">
+              <div class="features__card-image">
+                <img src="assets/images/game.jpg" alt="Настольные игры" />
+              </div>
+              <div class="features__card-title">Настольные игры</div>
+            </div>
+            <div class="features__card">
+              <div class="features__card-image">
+                <img src="assets/images/netflix.jpg" alt="Киносервисы" />
+              </div>
+              <div class="features__card-title">
+                Кино cервисы Netflix, IVI, MegoGo, КиноПоиск, Okko
+              </div>
+            </div>
+            <div class="features__card">
+              <div class="features__card-image">
+                <img src="assets/images/sony.jpg" alt="Игровая приставка" />
+              </div>
+              <div class="features__card-title">Playstation 5</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="section rooms" id="rooms">
+        <div class="container">
+          <h2 class="block-title">Наши залы</h2>
 
-<main class="main">
-  <section class="section hero" id="banner">
-    <div class="container">
-        <h1 class="hero__text">Game over</h1>
-        <p class="hero__subtext">Новый формат игр и отдыха</p>
-    </div>
-  </section>
-  <!-- В макете Фигма нет этой секции. Пока.
-  <section class="section" id="features">
-    <div class="container">
-      <h2 class="block-title">У нас есть всё для классного отдыха с друзьями!</h2>
-      <ul>
-        <li><img src="assets/images/vr.jpg" alt="VR очки">VR очки</li>
-        <li><img src="assets/images/audio.jpg" alt="Аудиосистема">Аудио-система 5.1 с отличным звуком</li>
-        <li><img src="assets/images/micro.jpg" alt="Караоке">Караоке (4 микрофона)</li>
-        <li><img src="assets/images/game.jpg" alt="Настольные игры">Настольные игры</li>
-        <li><img src="assets/images/netflix.jpg" alt="Киносервисы">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko
-        </li>
-        <li><img src="assets/images/sony.jpg" alt="Игровая приставка">Playstation 5</li>
-      </ul>
-    </div>
-  </section>
-  -->
-  <section class="section rooms" id="rooms">
-    <div class="container">
-      <h2 class="block-title">Наши залы</h2>
+          <ul class="rooms__list">
+            <li class="rooms__item rooms__item_vibes">
+              <p class="rooms__text">80’s vibes</p>
+            </li>
+            <li class="rooms__item rooms__item_starwars">
+              <p class="rooms__text">star wars</p>
+            </li>
+            <li class="rooms__item rooms__item_wildwest">
+              <p class="rooms__text">wild west</p>
+            </li>
+            <li class="rooms__item rooms__item_neonstyle">
+              <p class="rooms__text">neon style</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-      <ul class="rooms__list">
-        <li class="rooms__item rooms__item_vibes">
-          <p class="rooms__text">80’s vibes</p>
-        </li>
-        <li class="rooms__item rooms__item_starwars">
-          <p class="rooms__text">star wars</p>
-        </li>
-        <li class="rooms__item rooms__item_wildwest">
-          <p class="rooms__text">wild west</p>
-        </li>
-        <li class="rooms__item rooms__item_neonstyle">
-          <p class="rooms__text">neon style</p>
-        </li>
-      </ul>
-
-    </div>
-  </section>
-
-  <!--Эта секция в макете Фигмы просто скриншотом сделана-->
-  <section class="section booking" id="booking">
-    <div class="container">
-      <h2 class="block-title">Забронировать зал просто</h2>
-<!--      <div class="booking__form-wrapper">-->
-        <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-          <fieldset>
-            <legend>Выбери зал</legend>
-            <label>
-              <input type="radio" value="80's vibes" name="room_theme">
-              80's vibes
-            </label>
-            <label>
-              <input type="radio" value="star wars" name="room_theme">
-              star wars
-            </label>
-            <label>
-              <input type="radio" value="wild west" name="room_theme">
-              wild west
-            </label>
-            <label>
-              <input type="radio" value="neon style" name="room_theme">
-              neon style
-            </label>
-          </fieldset>
-
-          <fieldset>
-            <legend>Собери набор развлечений</legend>
+      <!--Эта секция в макете Фигмы просто скриншотом сделана-->
+      <section class="section booking" id="booking">
+        <div class="container">
+          <h2 class="block-title">Забронировать зал просто</h2>
+          <!--      <div class="booking__form-wrapper">-->
+          <form
+            class="booking__form"
+            action="https://jsonplaceholder.typicode.com/posts"
+            method="post"
+          >
             <fieldset>
-              <legend>Приставка:</legend>
+              <legend>Выбери зал</legend>
               <label>
-                <input type="radio" value="PlayStation" name="tvset">
-                PlayStation
+                <input type="radio" value="80's vibes" name="room_theme" />
+                80's vibes
               </label>
               <label>
-                <input type="radio" value="Sega Mega Drive" name="tvset">
-                Sega Mega Drive
+                <input type="radio" value="star wars" name="room_theme" />
+                star wars
               </label>
               <label>
-                <input type="radio" value="X-box One S" name="tvset">
-                X-box One S
+                <input type="radio" value="wild west" name="room_theme" />
+                wild west
               </label>
               <label>
-                <input type="radio" value="Dendy" name="tvset">
-                Dendy
+                <input type="radio" value="neon style" name="room_theme" />
+                neon style
               </label>
             </fieldset>
 
             <fieldset>
-              <legend>Настольные игры:</legend>
-              <label>
-                <input type="checkbox" value="Jenga" name="boardgame">
-                Jenga
-              </label>
-              <label>
-                <input type="checkbox" value="Monopoly" name="boardgame">
-                Monopoly
-              </label>
-              <label>
-                <input type="checkbox" value="Munchkin" name="boardgame">
-                Манчкин
-              </label>
-              <label>
-                <input type="checkbox" value="Alias" name="boardgame">
-                Alias
-              </label>
-            </fieldset>
-            <fieldset>
-              <legend>Дополнительно:</legend>
-              <label>
-                <input type="checkbox" value="Karaoke" name="additional">
-                Караоке
-              </label>
-              <label>
-                <input type="checkbox" value="VR" name="additional">
-                VR
-              </label>
-            </fieldset>
-          </fieldset>
+              <legend>Собери набор развлечений</legend>
+              <fieldset>
+                <legend>Приставка:</legend>
+                <label>
+                  <input type="radio" value="PlayStation" name="tvset" />
+                  PlayStation
+                </label>
+                <label>
+                  <input type="radio" value="Sega Mega Drive" name="tvset" />
+                  Sega Mega Drive
+                </label>
+                <label>
+                  <input type="radio" value="X-box One S" name="tvset" />
+                  X-box One S
+                </label>
+                <label>
+                  <input type="radio" value="Dendy" name="tvset" />
+                  Dendy
+                </label>
+              </fieldset>
 
-          <fieldset>
-            <legend>Выбери дату и время</legend>
-            <div>
+              <fieldset>
+                <legend>Настольные игры:</legend>
+                <label>
+                  <input type="checkbox" value="Jenga" name="boardgame" />
+                  Jenga
+                </label>
+                <label>
+                  <input type="checkbox" value="Monopoly" name="boardgame" />
+                  Monopoly
+                </label>
+                <label>
+                  <input type="checkbox" value="Munchkin" name="boardgame" />
+                  Манчкин
+                </label>
+                <label>
+                  <input type="checkbox" value="Alias" name="boardgame" />
+                  Alias
+                </label>
+              </fieldset>
+              <fieldset>
+                <legend>Дополнительно:</legend>
+                <label>
+                  <input type="checkbox" value="Karaoke" name="additional" />
+                  Караоке
+                </label>
+                <label>
+                  <input type="checkbox" value="VR" name="additional" />
+                  VR
+                </label>
+              </fieldset>
+            </fieldset>
+
+            <fieldset>
+              <legend>Выбери дату и время</legend>
               <div>
-                <input type="date" required name="date" aria-label="Выберите дату посещения">
-                <input type="time" required name="time" aria-label="Выберите время посещения">
+                <div>
+                  <input
+                    type="date"
+                    required
+                    name="date"
+                    aria-label="Выберите дату посещения"
+                  />
+                  <input
+                    type="time"
+                    required
+                    name="time"
+                    aria-label="Выберите время посещения"
+                  />
+                </div>
+
+                <input
+                  type="number"
+                  required
+                  min="0"
+                  name="guests"
+                  placeholder="Сколько человек &#9660;"
+                  aria-label="Укажите количество посетителей"
+                />
               </div>
 
-              <input type="number" required min="0" name="guests" placeholder="Сколько человек &#9660;"
-                     aria-label="Укажите количество посетителей">
-            </div>
+              <div>
+                <label for="firstname">Имя</label>
+                <input
+                  type="text"
+                  required
+                  maxlength="50"
+                  name="firstname"
+                  id="firstname"
+                />
 
-            <div>
-              <label for="firstname">Имя</label>
-              <input type="text" required maxlength="50" name="firstname" id="firstname">
+                <label for="lastname">Фамилия</label>
+                <input
+                  type="text"
+                  required
+                  maxlength="50"
+                  name="lastname"
+                  id="lastname"
+                />
+              </div>
 
-              <label for="lastname">Фамилия</label>
-              <input type="text" required maxlength="50" name="lastname" id="lastname">
-            </div>
+              <div>
+                <label for="phone">Телефон</label>
+                <input
+                  type="tel"
+                  required
+                  maxlength="15"
+                  name="phone"
+                  id="phone"
+                />
 
-            <div>
-              <label for="phone">Телефон</label>
-              <input type="tel" required maxlength="15" name="phone" id="phone">
+                <label for="email">E-mail</label>
+                <input type="email" required name="email" id="email" />
+              </div>
+            </fieldset>
 
-              <label for="email">E-mail</label>
-              <input type="email" required name="email" id="email">
-            </div>
-
-          </fieldset>
-
-          <button>Забронировать</button>
-
-        </form>
-
-      </div>
-
-<!--    </div>-->
-  </section>
-
-  <section class="section section-about" id="about">
-    <div class="container">
-      <h2 class="block-title">О нас</h2>
-      <img class="section-about__image" src="assets/images/about_photos.jpg" alt="Фотоколлаж об игровом пространстве Game Over">
-      <div class="section-about__text-wrapper">
-        <div class="section-about__paragraph-wrapper">
-          <p class="section-about__paragraph">Для наших гостей мы создали концептуально&nbsp;новое игровое пространство
-            виртуальной реальности в&nbsp;центральной части города.</p>
-          <p class="section-about__paragraph">Каждый день мы стараемся создавать для&nbsp;вас&nbsp;самую лучшую игровую атмосферу
-            и&nbsp;радовать Вас топовыми игровыми
-            разработками со&nbsp;всего&nbsp;мира.</p>
+            <button>Забронировать</button>
+          </form>
         </div>
 
-        <blockquote class="section-about__blockquote">
-          <p class="section-about__blockquote-paragraph">GAME OVER &mdash;</p>
-          <p class="section-about__blockquote-paragraph">это место незабываемых впечатлений</p>
-        </blockquote>
+        <!--    </div>-->
+      </section>
 
-        <figure class="section-about__author-figure">
-          <img class="section-about__author-figure-image" src="assets/images/creator_full.jpg" alt="Фотография создателя игровой территории GAME OVER">
-          <figcaption class="section-about__author-figcaption">
-            <p class="section-about__author-description">Аркадий Абакшин, создатель игровой территории GAME OVER</p>
-          </figcaption>
-        </figure>
+      <section class="section section-about" id="about">
+        <div class="container">
+          <h2 class="block-title">О нас</h2>
+          <img
+            class="section-about__image"
+            src="assets/images/about_photos.jpg"
+            alt="Фотоколлаж об игровом пространстве Game Over"
+          />
+          <div class="section-about__text-wrapper">
+            <div class="section-about__paragraph-wrapper">
+              <p class="section-about__paragraph">
+                Для наших гостей мы создали концептуально&nbsp;новое игровое
+                пространство виртуальной реальности в&nbsp;центральной части
+                города.
+              </p>
+              <p class="section-about__paragraph">
+                Каждый день мы стараемся создавать для&nbsp;вас&nbsp;самую
+                лучшую игровую атмосферу и&nbsp;радовать Вас топовыми игровыми
+                разработками со&nbsp;всего&nbsp;мира.
+              </p>
+            </div>
 
-      </div>
-    </div>
+            <blockquote class="section-about__blockquote">
+              <p class="section-about__blockquote-paragraph">
+                GAME OVER &mdash;
+              </p>
+              <p class="section-about__blockquote-paragraph">
+                это место незабываемых впечатлений
+              </p>
+            </blockquote>
 
-  </section>
-
-    <section class="section section-reviews" id="reviews">
-      <div class="container container-reviews">
-        <h2 class="block-title">Отзывы посетителей</h2>
-        <ul class="section-reviews__guest-list">
-          <li class="section-reviews__guest">
-            <figure class="section-reviews__guest-figure">
-              <img class="section-reviews__guest-figure-image section-reviews__guest-figure-image-1"
-                   src="assets/images/guest_1.jpg"
-                   alt="Фото посетителя с отзывом">
-              <figcaption class="section-reviews__guest-figure-figcaption">Макс Самойлов</figcaption>
+            <figure class="section-about__author-figure">
+              <img
+                class="section-about__author-figure-image"
+                src="assets/images/creator_full.jpg"
+                alt="Фотография создателя игровой территории GAME OVER"
+              />
+              <figcaption class="section-about__author-figcaption">
+                <p class="section-about__author-description">
+                  Аркадий Абакшин, создатель игровой территории GAME OVER
+                </p>
+              </figcaption>
             </figure>
-            <p class="section-reviews__guest-description">Отмечали здесь день рождения с компанией друзей, все было очень круто!
-              VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
-          </li>
+          </div>
+        </div>
+      </section>
 
-          <li class="section-reviews__guest">
-            <figure class="section-reviews__guest-figure">
-              <img class="section-reviews__guest-figure-image section-reviews__guest-figure-image-2"
-                   src="assets/images/guest_2.jpg"
-                   alt="Фото посетителя с отзывом">
-              <figcaption class="section-reviews__guest-figure-figcaption">Оксана Григорьева</figcaption>
-            </figure>
-            <p class="section-reviews__guest-description">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив!
-              У нас в городе больше нет подобных заведений.</p>
-          </li>
+      <section class="section section-reviews" id="reviews">
+        <div class="container container-reviews">
+          <h2 class="block-title">Отзывы посетителей</h2>
+          <ul class="section-reviews__guest-list">
+            <li class="section-reviews__guest">
+              <figure class="section-reviews__guest-figure">
+                <img
+                  class="section-reviews__guest-figure-image section-reviews__guest-figure-image-1"
+                  src="assets/images/guest_1.jpg"
+                  alt="Фото посетителя с отзывом"
+                />
+                <figcaption class="section-reviews__guest-figure-figcaption">
+                  Макс Самойлов
+                </figcaption>
+              </figure>
+              <p class="section-reviews__guest-description">
+                Отмечали здесь день рождения с компанией друзей, все было очень
+                круто! VR очки это просто бомба, никогда еще я не был в таком
+                полном игровом погружении. Сервис на высоте!
+              </p>
+            </li>
 
-          <li class="section-reviews__guest">
-            <figure class="section-reviews__guest-figure">
-              <img class="section-reviews__guest-figure-image section-reviews__guest-figure-image-3"
-                   src="assets/images/guest_3.jpg"
-                   alt="Фото посетителя с отзывом">
-              <figcaption class="section-reviews__guest-figure-figcaption">Никита Ященко</figcaption>
-            </figure>
-            <p class="section-reviews__guest-description">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн,
-              попал в атмосферу космоса</p>
-          </li>
-        </ul>
+            <li class="section-reviews__guest">
+              <figure class="section-reviews__guest-figure">
+                <img
+                  class="section-reviews__guest-figure-image section-reviews__guest-figure-image-2"
+                  src="assets/images/guest_2.jpg"
+                  alt="Фото посетителя с отзывом"
+                />
+                <figcaption class="section-reviews__guest-figure-figcaption">
+                  Оксана Григорьева
+                </figcaption>
+              </figure>
+              <p class="section-reviews__guest-description">
+                Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный
+                получился корпоратив! У нас в городе больше нет подобных
+                заведений.
+              </p>
+            </li>
 
-      </div>
-    </section>
+            <li class="section-reviews__guest">
+              <figure class="section-reviews__guest-figure">
+                <img
+                  class="section-reviews__guest-figure-image section-reviews__guest-figure-image-3"
+                  src="assets/images/guest_3.jpg"
+                  alt="Фото посетителя с отзывом"
+                />
+                <figcaption class="section-reviews__guest-figure-figcaption">
+                  Никита Ященко
+                </figcaption>
+              </figure>
+              <p class="section-reviews__guest-description">
+                Немного подвисала игра в VR очках, а так все норм. Крутое
+                оформление комнаты в стиле звездных войн, попал в атмосферу
+                космоса
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-  <section class="section section-faq" id="faq">
-    <div class="container">
-      <h2 class="block-title">Частые вопросы</h2>
-      <ul class="section-faq__list">
-        <li class="section-faq__list-item">
-          Можно ли забронировать комнату онлайн?
-        </li>
-        <li class="section-faq__list-item">
-          Могут ли мне вернуть деньги за бронь?
-        </li>
-        <li class="section-faq__list-item">Какая комната самая популярная?
-        </li>
-        <li class="section-faq__list-item">
-          Как получить VIP-карту?
-        </li>
-        <li class="section-faq__list-item">
-          Какая комната самая популярная?
-        </li>
-      </ul>
-    </div>
-  </section>
-</main>
+      <section class="section section-faq" id="faq">
+        <div class="container">
+          <h2 class="block-title">Частые вопросы</h2>
+          <ul class="section-faq__list">
+            <li class="section-faq__list-item">
+              Можно ли забронировать комнату онлайн?
+            </li>
+            <li class="section-faq__list-item">
+              Могут ли мне вернуть деньги за бронь?
+            </li>
+            <li class="section-faq__list-item">
+              Какая комната самая популярная?
+            </li>
+            <li class="section-faq__list-item">Как получить VIP-карту?</li>
+            <li class="section-faq__list-item">
+              Какая комната самая популярная?
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-<footer class="footer" id="contacts">
-  <div class="container">
-    <h2 class="block-title">Контакты</h2>
+    <footer class="footer" id="contacts">
+      <div class="container">
+        <h2 class="block-title">Контакты</h2>
 
-    <address class="footer__contacts">
-      <p class="footer__contact footer__contact_type_address">г. Москва ул.&nbsp;Аквамарина,&nbsp;16</p>
-      <p class="footer__contact footer__contact_type_phone">
-        <a href="tel:89509302893" class="footer__link">8(950)930-28-93</a>
-      </p>
-      <p class="footer__contact footer__contact_type_email">
-        <a href="mailto:GameOver@gmail.com" class="footer__link">GameOver@gmail.com</a>
-      </p>
-    </address>
+        <address class="footer__contacts">
+          <p class="footer__contact footer__contact_type_address">
+            г. Москва ул.&nbsp;Аквамарина,&nbsp;16
+          </p>
+          <p class="footer__contact footer__contact_type_phone">
+            <a href="tel:89509302893" class="footer__link">8(950)930-28-93</a>
+          </p>
+          <p class="footer__contact footer__contact_type_email">
+            <a href="mailto:GameOver@gmail.com" class="footer__link"
+              >GameOver@gmail.com</a
+            >
+          </p>
+        </address>
 
-    <ul class="socials-list">
-      <li class="socials-list__item">
-        <a class="socials-list__link" href="https://vk.com" target="_blank">
-          <svg width="48" height="48" viewbox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M23.9999 0C10.7449 0 -0.00012207 10.745 -0.00012207 24C-0.00012207 37.255 10.7449 48 23.9999 48C37.2549
+        <ul class="socials-list">
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="https://vk.com" target="_blank">
+              <svg
+                width="48"
+                height="48"
+                viewbox="0 0 48 48"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.9999 0C10.7449 0 -0.00012207 10.745 -0.00012207 24C-0.00012207 37.255 10.7449 48 23.9999 48C37.2549
                48 47.9999 37.255 47.9999 24C47.9999 10.745 37.2549 0 23.9999 0ZM33.2299 27.0775C33.2299 27.0775 35.3524
                 29.1725 35.8749 30.145C35.8899 30.165 35.8974 30.185 35.9024 30.195C36.1149 30.5525 36.1649 30.83 36.0599
                  31.0375C35.8849 31.3825 35.2849 31.5525 35.0799 31.5675H31.3299C31.0699 31.5675 30.5249 31.5 29.8649
@@ -332,15 +517,22 @@
                               18.8037 30.1549 17.7075C30.1924 17.6425 30.3024 17.4425 30.4324 17.365C30.5283 17.3161
                                30.6347 17.2912 30.7424 17.2925H35.1949C35.6799 17.2925 36.0124 17.365 36.0749
                                 17.5525C36.1849 17.85 36.0549 18.7575 34.0224 21.51L33.1149 22.7075C31.2724
-                                 25.1225 31.2724 25.245 33.2299 27.0775Z"/>
-          </svg>
-
-        </a>
-      </li>
-      <li class="socials-list__item">
-        <a class="socials-list__link" href="https://t.me" target="_blank">
-          <svg width="48" height="48" viewbox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M47.9999 24C47.9999 30.3652 45.4713 36.4697 40.9704 40.9706C36.4696 45.4714 30.3651 48 23.9999
+                                 25.1225 31.2724 25.245 33.2299 27.0775Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="https://t.me" target="_blank">
+              <svg
+                width="48"
+                height="48"
+                viewbox="0 0 48 48"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M47.9999 24C47.9999 30.3652 45.4713 36.4697 40.9704 40.9706C36.4696 45.4714 30.3651 48 23.9999
              48C17.6347 48 11.5302 45.4714 7.02932 40.9706C2.52844 36.4697 -0.00012207 30.3652 -0.00012207
               24C-0.00012207 17.6348 2.52844 11.5303 7.02932 7.02944C11.5302 2.52856 17.6347 0 23.9999 0C30.3651
                0 36.4696 2.52856 40.9704 7.02944C45.4713 11.5303 47.9999 17.6348 47.9999 24ZM24.8609 17.718C22.5269
@@ -354,14 +546,26 @@
                        34.794C28.7669 35.502 29.6639 36.138 30.7649 36.036C31.4069 35.976 32.0699 35.376 32.4059
                         33.576C33.2009 29.325 34.7639 20.118 35.1239 16.323C35.1458 16.0075 35.1328 15.6906 35.0849
                          15.378C35.0566 15.1258 34.9346 14.8934 34.7429 14.727C34.4699 14.5386 34.1445 14.4409 33.8129
-                          14.448C32.9129 14.463 31.5239 14.946 24.8609 17.718Z"/>
-          </svg>
-        </a>
-      </li>
-      <li class="socials-list__item">
-        <a class="socials-list__link" href="https://pinterest.com" target="_blank">
-          <svg width="50" height="50" viewbox="0 0 50 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M25.0005 0C11.1947 0 -0.000152588 11.1936 -0.000152588 25.0006C-0.000152588 35.2378 6.15562
+                          14.448C32.9129 14.463 31.5239 14.946 24.8609 17.718Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a
+              class="socials-list__link"
+              href="https://pinterest.com"
+              target="_blank"
+            >
+              <svg
+                width="50"
+                height="50"
+                viewbox="0 0 50 50"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25.0005 0C11.1947 0 -0.000152588 11.1936 -0.000152588 25.0006C-0.000152588 35.2378 6.15562
              44.0314 14.9646 47.8981C14.8941 46.1526 14.9511 44.0558 15.3998 42.159C15.8806 40.1282 18.6165 28.5359
               18.6165 28.5359C18.6165 28.5359 17.8178 26.9397 17.8178 24.5808C17.8178 20.8763 19.9652 18.1077 22.6383
                18.1077C24.912 18.1077 26.0107 19.8154 26.0107 21.8609C26.0107 24.1468 24.5537 27.5635 23.8037
@@ -373,32 +577,49 @@
                      8.40898C35.5056 8.40898 41.7877 15.316 41.7877 22.7321C41.7877 32.5378 36.3351 39.8647 28.2979
                       39.8647C25.5998 39.8647 23.0607 38.4051 22.1909 36.7487C22.1909 36.7487 20.7396 42.5077 20.4325
                        43.6218C19.9024 45.5494 18.8646 47.4763 17.9159 48.9769C20.2162 49.6571 22.6024 50.0025 25.0011
-                        50.0026C38.8063 50.0013 49.9998 38.8071 49.9998 25.0006C49.9998 11.1936 38.8063 0 25.0005 0V0Z"/>
-          </svg>
-        </a>
-      </li>
-      <li class="socials-list__item">
-        <a class="socials-list__link" href="https://www.stumbleupon.com" target="_blank">
-          <svg width="50" height="50" viewbox="0 0 50 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M44.7441 9.66919C48.1583 14.0494 50.0085 19.4463
+                        50.0026C38.8063 50.0013 49.9998 38.8071 49.9998 25.0006C49.9998 11.1936 38.8063 0 25.0005 0V0Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a
+              class="socials-list__link"
+              href="https://www.stumbleupon.com"
+              target="_blank"
+            >
+              <svg
+                width="50"
+                height="50"
+                viewbox="0 0 50 50"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M44.7441 9.66919C48.1583 14.0494 50.0085 19.4463
             49.9999 24.9999C49.9999 38.8051 38.805 49.9999 25.0006 49.9999C15.2871 49.9999 6.86597 44.4576
             2.72751 36.3647H13.6237C18.816 36.3647 22.4429 33.566 22.4429 29.0923C22.4429 19.6108 11.5051 23.4737
             11.5051 20.1089C11.5051 18.4878 12.8057 17.898 15.1858 17.898H22.7692C24.8711 17.898 27.3435 18.275
             27.3435 20.5685V28.1243C27.3435 33.5955 31.6159 36.364 36.0441 36.364C40.548 36.364 44.7435 33.5955
-            44.7435 28.1243V9.66919H44.7441Z" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0005 2.43241e-05C30.0173 -0.00698868 34.919 1.50262
+            44.7435 28.1243V9.66919H44.7441Z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M25.0005 2.43241e-05C30.0173 -0.00698868 34.919 1.50262
              39.0626 4.33079V28.3013C39.0626 29.9628 37.7037 31.3224 36.0447 31.3224C34.3838 31.3224 33.0261 29.9628
               33.0261 28.3013V21.1186C33.0261 15.3846 30.1242 12.9994 26.3447 12.9994H14.0441C9.59088 12.9994 5.89665
                15.834 5.89665 20.3289C5.89665 22.6289 6.8819 25.9994 11.5415 26.8353C15.337 27.5186 16.8351 27.3199
                 16.8351 29.3506C16.8351 31.3224 14.6261 31.3224 11.7101 31.3224H0.808189C0.269676 29.2582 -0.0019826
-                 27.1334 -0.000143311 25C-0.000143311 11.1981 11.196 2.43241e-05 25.0005 2.43241e-05Z"/>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </div>
-</footer>
-
-
-</body>
+                 27.1334 -0.000143311 25C-0.000143311 11.1981 11.196 2.43241e-05 25.0005 2.43241e-05Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

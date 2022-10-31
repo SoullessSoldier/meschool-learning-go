@@ -1,7 +1,6 @@
 *,
 *:before,
-*:after
-{
+*:after {
   box-sizing: border-box;
 }
 
@@ -12,7 +11,7 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-style: normal;
   background-color: #1b1a1b;
   color: #fff;
@@ -26,9 +25,10 @@ figure {
 }
 /*./For one craziest browser*/
 
-.block-title{
-  margin: 0 0 40px;
-  padding: 0;
+.block-title {
+  margin: 0 auto 40px;
+  padding: 0 100px;
+  max-width: 980px;
   font-weight: 700;
   font-size: 40px;
   line-height: 125%;
@@ -53,3 +53,8 @@ figure {
   display: flow-root;
 }
 
+.btn {
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+}
