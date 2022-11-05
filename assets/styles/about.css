@@ -1,9 +1,9 @@
-/*.section-about__image {
-  float: left;
-}*/
+.section-about {
+  padding-top: 80px;
+}
 
 .section-about__text-wrapper {
-  max-width: calc(500/1180 * 100%);
+  max-width: calc(500 / 1180 * 100%);
   float: right;
   /*padding-left: 680px;*/
 }

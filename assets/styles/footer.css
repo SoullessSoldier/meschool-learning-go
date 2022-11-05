@@ -1,3 +1,22 @@
+.footer-wrapper {
+  margin-bottom: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer__map-wrapper {
+  width: 680px;
+  height: 274px;
+  overflow: hidden;
+}
+
+.footer__map-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: 100% -29px;
+}
 
 .address {
   margin: 0 0 38px;
@@ -6,7 +25,9 @@
 .contacts__list {
   margin: 0 0 40px;
   padding: 0;
-  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 26px;
 }
 
 .contacts__item {
@@ -27,7 +48,6 @@
   padding: 0;
   vertical-align: middle;
 }
-
 
 .contacts__item-link {
   margin: 0;
@@ -95,7 +115,6 @@
   vertical-align: middle;
 }
 
-
 /**/
 
 .socials-list {
@@ -125,4 +144,25 @@
   color: #cd06ff;
 }
 
+.footer__credits {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 
+.footer__copyright {
+  text-align: left;
+}
+
+.footer__author-paragraph {
+  margin: 0 0 6px;
+  padding: 0;
+}
+
+.footer__author {
+  text-align: right;
+}
+
+.footer__author-paragraph:last-child {
+  margin: 0;
+}

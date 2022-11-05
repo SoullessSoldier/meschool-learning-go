@@ -1,1 +1,187 @@
-/**/
+.section.booking {
+  padding: 80px 0;
+  background-color: #440f51;
+  color: #fff;
+}
+
+.booking .subcontainer {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking__form-fieldset {
+  margin: 0 0 60px 0;
+  padding: 0;
+  border: none;
+}
+
+.booking__form-fieldset:last-child {
+  margin-bottom: 40px;
+}
+
+.booking__form-fieldset_subset {
+  margin: 0;
+}
+
+.booking__form-legend {
+  margin: 0 0 40px 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.booking__form-legend_align_center {
+  text-align: center;
+}
+
+.booking__form-label-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.booking__form-label {
+  cursor: pointer;
+}
+.booking__form-label_button {
+  width: 250px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.booking__form-input-radio_visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+input.booking__form-input-radio_visually-hidden:checked
+  + label.booking__form-label_button {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.booking__form-fieldset-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.booking__form-fieldset_vertical-set {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.booking__form-fieldset-subset {
+  margin: 0;
+}
+
+.booking__form-fieldset-subset-legend {
+  margin-bottom: 23px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.booking__form-fieldset-subset-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 21px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.booking__form-fieldset-subset-label:last-child {
+  margin-bottom: 0;
+}
+
+.booking__form-fieldset-subset-input {
+  cursor: pointer;
+}
+
+.booking__form-fieldset-subset-input[type="radio"] {
+  width: 27px;
+  height: 27px;
+}
+
+.booking__form-fieldset-subset-input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+}
+
+.booking-user-info-set {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.user-info-set__input-set {
+  width: 290px;
+}
+
+.user-info-set__input-subset {
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-info-set__input-wrapper {
+  position: relative;
+  margin-bottom: 36px;
+  width: 100%;
+}
+
+.user-info-set__input-wrapper:last-child {
+  margin: 0;
+}
+
+.user-info-set__input-wrapper_short {
+  width: 134px;
+}
+
+.user-info-set__input {
+  width: 100%;
+  height: 52px;
+}
+
+.user-info-set__label {
+  position: absolute;
+  top: -22px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.booking__form-btn-submit {
+  padding: 16px 50px;
+  width: 300px;
+  align-self: flex-end;
+  background-color: #ffffff;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #6c0287;
+  border-radius: 10px;
+}
