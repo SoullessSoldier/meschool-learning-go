@@ -11,34 +11,48 @@
   line-height: 46px;
   cursor: pointer;
 }
-
+/*
 .section-faq__list-item:after {
   content: "";
   width: 46px;
   height: 46px;
   float: right;
-  display: inline-block;
   background-repeat: no-repeat;
   cursor: pointer;
-}
-.section-faq__list-item:nth-child(odd) {
-  background-color: #fff;
-  color: #1c1a1a;
+}*/
+
+.section-faq__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.section-faq__list-item:nth-child(odd) {
+  background-color: #fff;
+  color: #6c0287;
+}
+/*
 .section-faq__list-item:nth-child(odd):after {
   background-image: url("../images/open-purple.svg");
 }
-
+*/
 .section-faq__list-item:nth-child(even) {
   background-color: #440f51;
   color: #fff;
 }
-
+/*
 .section-faq__list-item:nth-child(even):after {
   background-image: url("../images/open.svg");
 }
-
-.section-faq__list-item:last-child{
+*/
+.section-faq__list-item:last-child {
   margin: 0;
+}
+
+.section-faq__list-item-icon {
+  cursor: pointer;
+}
+
+.section-faq__list-item:active .section-faq__list-item-icon-hiding-path {
+  color: transparent;
 }

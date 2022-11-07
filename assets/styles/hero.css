@@ -46,18 +46,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  gap: 40px;
 }
 
 .hero__feature-title {
   color: #cd06ff;
   font-size: 75px;
   font-weight: 900;
+  line-height: 106px;
   text-transform: uppercase;
 }
 
 .hero__feature-title_font_size_100 {
   font-size: 100px;
+  line-height: 141px;
 }
 
 .hero__feature-text {
@@ -76,10 +77,50 @@
   text-decoration: none;
 }
 
+.btn-booking:hover {
+  background-color: #840aa3;
+}
+
+.btn-booking:active {
+  background-color: #640aa3;
+}
+
+.btn-booking:focus {
+  background-color: #840aa3;
+}
+
 .hero__link-down {
   position: absolute;
   left: calc(50% - 30px);
   bottom: 90px;
   color: #fff;
   text-decoration: none;
+  outline: 1px solid transparent;
+}
+
+.hero__link-down-icon {
+  fill: none;
+  color: #fff;
+}
+
+.hero__link-down-icon:hover {
+  fill: #fff;
+  color: #6c0287;
+}
+
+.hero__link-down-icon:hover .hero__link-down-icon-circle {
+  color: #fff;
+}
+
+.hero__link-down-icon:active {
+  fill: #6c0287;
+  color: #fff;
+}
+
+.hero__link-down-icon:active .hero__link-down-icon-circle {
+  color: #6c0287;
+}
+
+.hero__link-down:focus {
+  outline: 1px solid #cd06ff;
 }

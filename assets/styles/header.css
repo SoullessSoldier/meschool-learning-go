@@ -31,5 +31,19 @@
   font-size: 22px;
   font-weight: 700;
   color: #fff;
-  outline: 1px solid #cd06ff;
+  border: 3px solid #cd06ff;
+}
+
+.btn-order-call:hover {
+  background-color: #6c0287;
+  border-color: #6c0287;
+}
+
+.btn-order-call:active {
+  background-color: #640aa3;
+  border-color: #000000;
+}
+
+.btn-order-call:focus {
+  background-color: #6c0287;
 }

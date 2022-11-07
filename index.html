@@ -86,13 +86,20 @@
           >
           <a href="#features" class="hero__link-down">
             <svg
+              class="hero__link-down-icon"
               width="97"
               height="97"
               viewBox="0 0 97 97"
-              fill="none"
+              fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <circle cx="48.5" cy="48.5" r="48" stroke="currentColor" />
+              <circle
+                class="hero__link-down-icon-circle"
+                cx="48.5"
+                cy="48.5"
+                r="48"
+                stroke="currentColor"
+              />
               <rect
                 x="34.4255"
                 y="43.9162"
@@ -201,65 +208,65 @@
                 Выбери зал
               </legend>
               <div class="booking__form-label-wrapper">
-                <div class="booking__form-control-wrapper">
-                  <input
-                    class="booking__form-input-radio_visually-hidden"
-                    type="radio"
-                    value="80's vibes"
-                    name="room_theme"
-                    id="vibes"
-                  />
-                  <label
-                    class="booking__form-label booking__form-label_button"
-                    for="vibes"
-                    >80's vibes
-                  </label>
-                </div>
-                <div class="booking__form-control-wrapper">
-                  <input
-                    class="booking__form-input-radio_visually-hidden"
-                    type="radio"
-                    value="star wars"
-                    name="room_theme"
-                    id="starwars"
-                  />
-                  <label
-                    class="booking__form-label booking__form-label_button"
-                    for="starwars"
-                  >
-                    star wars
-                  </label>
-                </div>
-                <div class="booking__form-control-wrapper">
-                  <input
-                    class="booking__form-input-radio_visually-hidden"
-                    type="radio"
-                    value="wild west"
-                    name="room_theme"
-                    id="wildwest"
-                  />
-                  <label
-                    class="booking__form-label booking__form-label_button"
-                    for="wildwest"
-                  >
-                    wild west
-                  </label>
-                </div>
-                <div class="booking__form-control-wrapper">
-                  <input
-                    class="booking__form-input-radio_visually-hidden"
-                    type="radio"
-                    value="neon style"
-                    name="room_theme"
-                    id="neonstyle"
-                  />
-                  <label
-                    class="booking__form-label booking__form-label_button"
-                    for="neonstyle"
-                  >
-                    neon style
-                  </label>
-                </div>
+                <!-- <div class="booking__form-control-wrapper"> -->
+                <input
+                  class="booking__form-input-radio_visually-hidden"
+                  type="radio"
+                  value="80's vibes"
+                  name="room_theme"
+                  id="vibes"
+                />
+                <label
+                  class="booking__form-label booking__form-label_button"
+                  for="vibes"
+                  >80's vibes
+                </label>
+                <!-- </div> -->
+                <!-- <div class="booking__form-control-wrapper"> -->
+                <input
+                  class="booking__form-input-radio_visually-hidden"
+                  type="radio"
+                  value="star wars"
+                  name="room_theme"
+                  id="starwars"
+                />
+                <label
+                  class="booking__form-label booking__form-label_button"
+                  for="starwars"
+                >
+                  star wars
+                </label>
+                <!-- </div> -->
+                <!-- <div class="booking__form-control-wrapper"> -->
+                <input
+                  class="booking__form-input-radio_visually-hidden"
+                  type="radio"
+                  value="wild west"
+                  name="room_theme"
+                  id="wildwest"
+                />
+                <label
+                  class="booking__form-label booking__form-label_button"
+                  for="wildwest"
+                >
+                  wild west
+                </label>
+                <!-- </div> -->
+                <!-- <div class="booking__form-control-wrapper"> -->
+                <input
+                  class="booking__form-input-radio_visually-hidden"
+                  type="radio"
+                  value="neon style"
+                  name="room_theme"
+                  id="neonstyle"
+                />
+                <label
+                  class="booking__form-label booking__form-label_button"
+                  for="neonstyle"
+                >
+                  neon style
+                </label>
+                <!-- </div> -->
               </div>
             </fieldset>
             <div class="subcontainer">
@@ -272,7 +279,7 @@
 
                 <div class="booking__form-fieldset-wrapper">
                   <fieldset
-                    class="booking__form-fieldset booking__form-fieldset_subset booking__form-fieldset_vertical-set"
+                    class="booking__form-fieldset booking__form-fieldset-subset booking__form-fieldset_vertical-set"
                   >
                     <legend class="booking__form-fieldset-subset-legend">
                       Приставка:
@@ -319,7 +326,7 @@
                     class="booking__form-fieldset booking__form-fieldset-subset booking__form-fieldset_vertical-set"
                   >
                     <legend class="booking__form-fieldset-subset-legend">
-                      Настольные игры:
+                      Настольные игры
                     </legend>
                     <label class="booking__form-fieldset-subset-label">
                       <input
@@ -363,7 +370,7 @@
                     class="booking__form-fieldset booking__form-fieldset-subset booking__form-fieldset_vertical-set"
                   >
                     <legend class="booking__form-fieldset-subset-legend">
-                      Дополнительно:
+                      Дополнительно
                     </legend>
                     <label class="booking__form-fieldset-subset-label">
                       <input
@@ -393,15 +400,14 @@
                 >
                   Выбери дату и время
                 </legend>
-                <div
-                  class="booking__form-fieldset_subset booking-user-info-set"
-                >
+                <div class="booking-user-info-set">
                   <div class="user-info-set__input-set">
                     <div class="user-info-set__input-subset">
                       <div class="user-info-set__input-wrapper_short">
                         <input
                           class="user-info-set__input"
                           type="date"
+                          placeholder="Дата"
                           required
                           name="date"
                           aria-label="Выберите дату посещения"
@@ -413,6 +419,7 @@
                         <input
                           class="user-info-set__input"
                           type="time"
+                          placeholder="Время"
                           required
                           name="time"
                           aria-label="Выберите время посещения"
@@ -423,15 +430,44 @@
                     </div>
 
                     <div class="user-info-set__input-wrapper">
-                      <input
+                      <!--<input
                         class="user-info-set__input"
                         type="number"
                         required
                         min="0"
                         name="guests"
-                        placeholder="Сколько человек &#9660;"
+                        placeholder="Сколько человек"
                         aria-label="Укажите количество посетителей"
-                      />
+                      />-->
+                      <select
+                        class="user-info-set__select"
+                        required
+                        name="guests"
+                        aria-label="Укажите количество посетителей"
+                      >
+                        <option
+                          class="user-info-set__select-option"
+                          value=""
+                          hidden
+                        >
+                          Сколько человек
+                        </option>
+                        <option class="user-info-set__select-option" value="1">
+                          1 человек
+                        </option>
+                        <option class="user-info-set__select-option" value="2">
+                          2 человека
+                        </option>
+                        <option class="user-info-set__select-option" value="3">
+                          3 человека
+                        </option>
+                        <option class="user-info-set__select-option" value="4">
+                          4 человека
+                        </option>
+                        <option class="user-info-set__select-option" value="5">
+                          5 человеков
+                        </option>
+                      </select>
                     </div>
                   </div>
 
@@ -494,7 +530,7 @@
                   </div>
                 </div>
               </fieldset>
-              <button class="booking__form-btn-submit" class="type" ="submit">
+              <button class="booking__form-btn-submit btn" type="submit">
                 Забронировать
               </button>
             </div>
@@ -617,17 +653,154 @@
           <h2 class="block-title">Частые вопросы</h2>
           <ul class="section-faq__list">
             <li class="section-faq__list-item">
-              Можно ли забронировать комнату онлайн?
+              <span class="section-faq__list-item-text"
+                >Можно ли забронировать комнату онлайн?</span
+              >
+              <svg
+                class="section-faq__list-item-icon"
+                width="46"
+                height="46"
+                viewBox="0 0 46 46"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="section-faq__list-item-icon-hiding-path"
+                  d="M22.8305 14H23.5085V34H22.8305V14Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M13 24.1695V23.4915H33V24.1695H13Z"
+                  fill="currentColor"
+                />
+                <circle
+                  cx="23"
+                  cy="23"
+                  r="22"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
             </li>
             <li class="section-faq__list-item">
-              Могут ли мне вернуть деньги за бронь?
+              <span class="section-faq__list-item-text"
+                >Могут ли мне вернуть деньги за бронь?
+              </span>
+              <svg
+                class="section-faq__list-item-icon"
+                width="46"
+                height="46"
+                viewBox="0 0 46 46"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="section-faq__list-item-icon-hiding-path"
+                  d="M22.8305 14H23.5085V34H22.8305V14Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M13 24.1695V23.4915H33V24.1695H13Z"
+                  fill="currentColor"
+                />
+                <circle
+                  cx="23"
+                  cy="23"
+                  r="22"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
             </li>
             <li class="section-faq__list-item">
-              Какая комната самая популярная?
+              <span class="section-faq__list-item-text"
+                >Какая комната самая популярная?
+              </span>
+              <svg
+                class="section-faq__list-item-icon"
+                width="46"
+                height="46"
+                viewBox="0 0 46 46"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="section-faq__list-item-icon-hiding-path"
+                  d="M22.8305 14H23.5085V34H22.8305V14Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M13 24.1695V23.4915H33V24.1695H13Z"
+                  fill="currentColor"
+                />
+                <circle
+                  cx="23"
+                  cy="23"
+                  r="22"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
             </li>
-            <li class="section-faq__list-item">Как получить VIP-карту?</li>
             <li class="section-faq__list-item">
-              Какая комната самая популярная?
+              <span class="section-faq__list-item-text"
+                >Как получить VIP-карту?
+              </span>
+              <svg
+                class="section-faq__list-item-icon"
+                width="46"
+                height="46"
+                viewBox="0 0 46 46"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="section-faq__list-item-icon-hiding-path"
+                  d="M22.8305 14H23.5085V34H22.8305V14Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M13 24.1695V23.4915H33V24.1695H13Z"
+                  fill="currentColor"
+                />
+                <circle
+                  cx="23"
+                  cy="23"
+                  r="22"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </li>
+            <li class="section-faq__list-item">
+              <span class="section-faq__list-item-text">
+                Какая комната самая популярная?
+              </span>
+              <svg
+                class="section-faq__list-item-icon"
+                width="46"
+                height="46"
+                viewBox="0 0 46 46"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="section-faq__list-item-icon-hiding-path"
+                  d="M22.8305 14H23.5085V34H22.8305V14Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M13 24.1695V23.4915H33V24.1695H13Z"
+                  fill="currentColor"
+                />
+                <circle
+                  cx="23"
+                  cy="23"
+                  r="22"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
             </li>
           </ul>
         </div>

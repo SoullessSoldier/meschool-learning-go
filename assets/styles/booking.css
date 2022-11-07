@@ -20,10 +20,6 @@
   margin-bottom: 40px;
 }
 
-.booking__form-fieldset_subset {
-  margin: 0;
-}
-
 .booking__form-legend {
   margin: 0 0 40px 0;
   font-weight: 700;
@@ -59,6 +55,7 @@
   color: #000000;
   background-color: #ffffff;
   border-radius: 8px;
+  border: 3px solid #fff;
 }
 
 .booking__form-input-radio_visually-hidden {
@@ -66,10 +63,17 @@
   transform: scale(0);
 }
 
-input.booking__form-input-radio_visually-hidden:checked
-  + label.booking__form-label_button {
+.booking__form-input-radio_visually-hidden:checked
+  + .booking__form-label_button {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #6c0287;
+  border-color: #ffffff;
+}
+
+.booking__form-label_button:hover {
+  color: #000000;
+  background-color: #eadeed;
+  border-color: #640aa3;
 }
 
 .booking__form-fieldset-wrapper {
@@ -88,6 +92,11 @@ input.booking__form-input-radio_visually-hidden:checked
 
 .booking__form-fieldset-subset {
   margin: 0;
+  width: 290px;
+}
+
+.booking__form-fieldset-subset:last-child {
+  width: 200px;
 }
 
 .booking__form-fieldset-subset-legend {
@@ -115,6 +124,10 @@ input.booking__form-input-radio_visually-hidden:checked
 
 .booking__form-fieldset-subset-input {
   cursor: pointer;
+}
+
+.booking__form-fieldset-subset-input:focus {
+  outline: 1px solid #cd06ff;
 }
 
 .booking__form-fieldset-subset-input[type="radio"] {
@@ -159,9 +172,66 @@ input.booking__form-input-radio_visually-hidden:checked
   width: 134px;
 }
 
-.user-info-set__input {
+.user-info-set__input,
+.user-info-set__select {
+  position: relative;
+  padding: 12px 57px 12px 20px;
   width: 100%;
   height: 52px;
+  border: 1px solid transparent;
+}
+
+.user-info-set__input::before,
+.user-info-set__input::-webkit-input-placeholder {
+  content: attr(placeholder);
+  font-size: 18px;
+  line-height: 28px;
+  color: #211e1e;
+}
+
+.user-info-set__input::after {
+  position: absolute;
+  right: 27px;
+  top: 15px;
+  content: url(../images/arrow_down.svg);
+  width: 21px;
+  height: 15px;
+}
+
+.user-info-set__input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  content: "";
+  right: 27px;
+  top: 15px;
+  color: #fff;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.user-info-set__input::-webkit-datetime-edit {
+  display: none;
+}
+
+.user-info-set__input:focus {
+  outline: 2px solid #cd06ff;
+}
+
+.user-info-set__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../images/arrow_down.svg) white no-repeat 90.7% !important;
+  background: url(../images/arrow_down.svg) white no-repeat calc(100% - 27px) !important;
+  cursor: pointer;
+}
+
+.user-info-set__select:not(:valid),
+.user-info-set__select:valid,
+.user-info-set__select {
+  font-size: 18px;
+  line-height: 28px;
+  color: #211e1e;
 }
 
 .user-info-set__label {
@@ -183,5 +253,20 @@ input.booking__form-input-radio_visually-hidden:checked
   line-height: 28px;
   text-transform: uppercase;
   color: #6c0287;
+  border: 3px solid transparent;
   border-radius: 10px;
+}
+
+.booking__form-btn-submit:hover {
+  background-color: #eadeed;
+  border-color: #6c0287;
+}
+
+.booking__form-btn-submit:active {
+  background-color: #eadeed;
+  border-color: transparent;
+}
+
+.booking__form-btn-submit:focus {
+  border-color: #6c0287;
 }

@@ -138,10 +138,18 @@
   display: block;
   color: #fff;
   text-decoration: none;
+  border: 1px solid transparent;
 }
 
 .socials-list__link:hover {
+  color: #eadeed;
+}
+.socials-list__link:active svg {
   color: #cd06ff;
+}
+.socials-list__link:focus {
+  color: #eadeed;
+  border-color: #cd06ff;
 }
 
 .footer__credits {
