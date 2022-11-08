@@ -63,3 +63,8 @@ figure {
   border-radius: 10px;
   cursor: pointer;
 }
+
+.transition-global {
+  transition-duration: 0.33s;
+  transition-timing-function: ease-in-out;
+}

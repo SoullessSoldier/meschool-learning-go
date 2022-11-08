@@ -32,6 +32,7 @@
   font-weight: 700;
   color: #fff;
   border: 3px solid #cd06ff;
+  transition-property: background-color, border-color;
 }
 
 .btn-order-call:hover {

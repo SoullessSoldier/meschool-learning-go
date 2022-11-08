@@ -75,6 +75,7 @@
   border: 0;
   outline: 1px solid transparent;
   text-decoration: none;
+  transition-property: background-color;
 }
 
 .btn-booking:hover {
@@ -96,11 +97,17 @@
   color: #fff;
   text-decoration: none;
   outline: 1px solid transparent;
+  transition-property: outline-color;
 }
 
 .hero__link-down-icon {
   fill: none;
   color: #fff;
+  transition-property: color;
+}
+
+.hero__link-down-icon-circle {
+  transition-property: color;
 }
 
 .hero__link-down-icon:hover {

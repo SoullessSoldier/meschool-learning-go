@@ -56,6 +56,7 @@
   background-color: #ffffff;
   border-radius: 8px;
   border: 3px solid #fff;
+  transition-property: border-color, background-color;
 }
 
 .booking__form-input-radio_visually-hidden {
@@ -133,11 +134,13 @@
 .booking__form-fieldset-subset-input[type="radio"] {
   width: 27px;
   height: 27px;
+  transition-property: outline-color;
 }
 
 .booking__form-fieldset-subset-input[type="checkbox"] {
   width: 25px;
   height: 25px;
+  transition-property: outline-color;
 }
 
 .booking-user-info-set {
@@ -172,13 +175,17 @@
   width: 134px;
 }
 
+.user-info-set__input {
+}
+
 .user-info-set__input,
 .user-info-set__select {
   position: relative;
   padding: 12px 57px 12px 20px;
   width: 100%;
   height: 52px;
-  border: 1px solid transparent;
+
+  transition-property: outline-color;
 }
 
 .user-info-set__input::before,
@@ -213,7 +220,8 @@
   display: none;
 }
 
-.user-info-set__input:focus {
+.user-info-set__input:focus,
+.user-info-set__select:focus {
   outline: 2px solid #cd06ff;
 }
 
@@ -255,6 +263,7 @@
   color: #6c0287;
   border: 3px solid transparent;
   border-radius: 10px;
+  transition-property: border-color, background-color;
 }
 
 .booking__form-btn-submit:hover {
