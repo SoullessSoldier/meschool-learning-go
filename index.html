@@ -37,20 +37,19 @@
           <img src="assets/images/logo.svg" alt="Логотип" />
           <nav class="nav">
             <ul class="nav__list">
-              <li class="nav__item">
+              <li class="nav__item transition-global border-bottom-white">
                 <a class="nav__link" href="#rooms">Залы</a>
               </li>
-              <li class="nav__item">
+              <li class="nav__item transition-global border-bottom-white">
                 <a class="nav__link" href="#about">О нас</a>
               </li>
-              <li class="nav__item">
+              <li class="nav__item transition-global border-bottom-white">
                 <a class="nav__link" href="#booking">Бронь</a>
               </li>
-              <li class="nav__item">
+              <li class="nav__item transition-global border-bottom-white">
                 <a class="nav__link" href="#reviews">Отзывы</a>
               </li>
-              <!-- <li class="nav__item"><a class="nav__link" href="#faq">Частые вопросы</a></li> -->
-              <li class="nav__item">
+              <li class="nav__item transition-global border-bottom-white">
                 <a class="nav__link" href="#contacts">Контакты</a>
               </li>
             </ul>
@@ -70,15 +69,15 @@
           <div class="hero__features">
             <div class="hero__feature">
               <div
-                class="hero__feature-title hero__feature-title_font_size_100"
+                class="hero__feature-title hero__feature-title_font_size_100 noselect"
               >
                 4
               </div>
-              <div class="hero__feature-text">Тематических зала</div>
+              <div class="hero__feature-text noselect">Тематических зала</div>
             </div>
             <div class="hero__feature">
-              <div class="hero__feature-title">new</div>
-              <div class="hero__feature-text">Новейшая аппаратура</div>
+              <div class="hero__feature-title noselect">new</div>
+              <div class="hero__feature-text noselect">Новейшая аппаратура</div>
             </div>
           </div>
           <a href="#booking" class="btn btn-booking transition-global">
@@ -131,13 +130,13 @@
               <div class="features__card-image">
                 <img src="assets/images/vr.jpg" alt="VR очки" />
               </div>
-              <div class="features__card-title">VR очки</div>
+              <div class="features__card-title noselect">VR очки</div>
             </div>
             <div class="features__card transition-global">
               <div class="features__card-image">
                 <img src="assets/images/audio.jpg" alt="Аудиосистема" />
               </div>
-              <div class="features__card-title">
+              <div class="features__card-title noselect">
                 Аудио-система 5.1 с&nbsp;отличным звуком
               </div>
             </div>
@@ -145,19 +144,21 @@
               <div class="features__card-image">
                 <img src="assets/images/micro.jpg" alt="Караоке" />
               </div>
-              <div class="features__card-title">Караоке (4 микрофона)</div>
+              <div class="features__card-title noselect">
+                Караоке (4 микрофона)
+              </div>
             </div>
             <div class="features__card transition-global">
               <div class="features__card-image">
                 <img src="assets/images/game.jpg" alt="Настольные игры" />
               </div>
-              <div class="features__card-title">Настольные игры</div>
+              <div class="features__card-title noselect">Настольные игры</div>
             </div>
             <div class="features__card transition-global">
               <div class="features__card-image">
                 <img src="assets/images/netflix.jpg" alt="Киносервисы" />
               </div>
-              <div class="features__card-title">
+              <div class="features__card-title noselect">
                 Кино cервисы Netflix, IVI, MegoGo, КиноПоиск, Okko
               </div>
             </div>
@@ -165,7 +166,7 @@
               <div class="features__card-image">
                 <img src="assets/images/sony.jpg" alt="Игровая приставка" />
               </div>
-              <div class="features__card-title">Playstation 5</div>
+              <div class="features__card-title noselect">Playstation 5</div>
             </div>
           </div>
         </div>
@@ -219,6 +220,7 @@
                 <label
                   class="booking__form-label booking__form-label_button transition-global"
                   for="vibes"
+                  tabindex="0"
                   >80's vibes
                 </label>
                 <!-- </div> -->
@@ -233,6 +235,7 @@
                 <label
                   class="booking__form-label booking__form-label_button transition-global"
                   for="starwars"
+                  tabindex="0"
                 >
                   star wars
                 </label>
@@ -248,6 +251,7 @@
                 <label
                   class="booking__form-label booking__form-label_button transition-global"
                   for="wildwest"
+                  tabindex="0"
                 >
                   wild west
                 </label>
@@ -263,6 +267,7 @@
                 <label
                   class="booking__form-label booking__form-label_button transition-global"
                   for="neonstyle"
+                  tabindex="0"
                 >
                   neon style
                 </label>
@@ -430,17 +435,8 @@
                     </div>
 
                     <div class="user-info-set__input-wrapper">
-                      <!--<input
-                        class="user-info-set__input"
-                        type="number"
-                        required
-                        min="0"
-                        name="guests"
-                        placeholder="Сколько человек"
-                        aria-label="Укажите количество посетителей"
-                      />-->
                       <select
-                        class="user-info-set__select"
+                        class="user-info-set__select noselect"
                         required
                         name="guests"
                         aria-label="Укажите количество посетителей"
@@ -825,12 +821,16 @@
                 г. Москва ул.&nbsp;Аквамарина,&nbsp;16
               </p>
               <p class="footer__contact footer__contact_type_phone">
-                <a href="tel:89509302893" class="footer__link"
+                <a
+                  href="tel:89509302893"
+                  class="footer__link transition-global border-bottom-white"
                   >8(950)930-28-93</a
                 >
               </p>
               <p class="footer__contact footer__contact_type_email">
-                <a href="mailto:GameOver@gmail.com" class="footer__link"
+                <a
+                  href="mailto:GameOver@gmail.com"
+                  class="footer__link transition-global border-bottom-white"
                   >GameOver@gmail.com</a
                 >
               </p>

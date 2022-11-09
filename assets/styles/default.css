@@ -68,3 +68,29 @@ figure {
   transition-duration: 0.33s;
   transition-timing-function: ease-in-out;
 }
+
+a,
+p,
+h1,
+h2,
+legend,
+figcaption,
+span,
+label,
+button,
+.noselect {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.border-bottom-white {
+  border-bottom: 1px solid transparent;
+  transition-property: border-color;
+}
+
+.border-bottom-white:hover {
+  border-bottom-color: #ffffff;
+}

@@ -55,8 +55,9 @@
   color: #000000;
   background-color: #ffffff;
   border-radius: 8px;
-  border: 3px solid #fff;
-  transition-property: border-color, background-color;
+  border: 3px solid #ffffff;
+  outline: none;
+  transition-property: color, border-color, background-color;
 }
 
 .booking__form-input-radio_visually-hidden {
@@ -72,8 +73,13 @@
 }
 
 .booking__form-label_button:hover {
-  color: #000000;
+  /* color: #000000; */
   background-color: #eadeed;
+  border-color: #640aa3;
+}
+
+.booking__form-label_button:focus {
+  background-color: #ffffff;
   border-color: #640aa3;
 }
 
@@ -173,9 +179,6 @@
 
 .user-info-set__input-wrapper_short {
   width: 134px;
-}
-
-.user-info-set__input {
 }
 
 .user-info-set__input,

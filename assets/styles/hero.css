@@ -82,12 +82,12 @@
   background-color: #840aa3;
 }
 
-.btn-booking:active {
-  background-color: #640aa3;
-}
-
 .btn-booking:focus {
   background-color: #840aa3;
+}
+
+.btn-booking:active {
+  background-color: #640aa3;
 }
 
 .hero__link-down {
