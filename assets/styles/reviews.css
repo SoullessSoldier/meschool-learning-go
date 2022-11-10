@@ -30,6 +30,27 @@
   object-fit: cover;
 }
 
+.section-reviews__guest-figure-image-wrapper {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.section-reviews__guest-fgure-image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(196, 196, 196, 0) 0%,
+    rgba(108, 2, 135, 0.5) 100%
+  );
+}
+
 .section-reviews__guest-figure-image-1 {
   object-position: 100% 0;
 }
@@ -55,5 +76,5 @@
   padding: 50px 0 0 0;
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px
+  line-height: 28px;
 }

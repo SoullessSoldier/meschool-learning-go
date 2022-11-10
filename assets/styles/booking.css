@@ -1,7 +1,6 @@
 .section.booking {
   padding: 80px 0;
-  background-color: #440f51;
-  color: #fff;
+  background-color: var(--bg-secondary-color);
 }
 
 .booking .subcontainer {
@@ -52,10 +51,10 @@
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
-  background-color: #ffffff;
+  color: var(--black-color);
+  background-color: var(--primary-color);
   border-radius: 8px;
-  border: 3px solid #ffffff;
+  border: 3px solid var(--primary-color);
   outline: none;
   transition-property: color, border-color, background-color;
 }
@@ -67,19 +66,18 @@
 
 .booking__form-input-radio_visually-hidden:checked
   + .booking__form-label_button {
-  color: #ffffff;
-  background-color: #6c0287;
-  border-color: #ffffff;
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  border-color: var(--primary-color);
 }
 
 .booking__form-label_button:hover {
-  /* color: #000000; */
   background-color: #eadeed;
   border-color: #640aa3;
 }
 
 .booking__form-label_button:focus {
-  background-color: #ffffff;
+  background-color: var(--primary-color);
   border-color: #640aa3;
 }
 
@@ -121,7 +119,7 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 25px;
-  color: #ffffff;
+  color: var(--primary-color);
   cursor: pointer;
 }
 
@@ -134,7 +132,7 @@
 }
 
 .booking__form-fieldset-subset-input:focus {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--secondary-color);
 }
 
 .booking__form-fieldset-subset-input[type="radio"] {
@@ -196,7 +194,7 @@
   content: attr(placeholder);
   font-size: 18px;
   line-height: 28px;
-  color: #211e1e;
+  color: var(--input-placeholder-color);
 }
 
 .user-info-set__input::after {
@@ -213,7 +211,7 @@
   content: "";
   right: 27px;
   top: 15px;
-  color: #fff;
+  color: var(--primary-color);
   opacity: 0;
   cursor: pointer;
   z-index: 2;
@@ -225,7 +223,7 @@
 
 .user-info-set__input:focus,
 .user-info-set__select:focus {
-  outline: 2px solid #cd06ff;
+  outline: 2px solid var(--secondary-color);
 }
 
 .user-info-set__select {
@@ -242,7 +240,7 @@
 .user-info-set__select {
   font-size: 18px;
   line-height: 28px;
-  color: #211e1e;
+  color: var(--input-placeholder-color);
 }
 
 .user-info-set__label {
@@ -251,19 +249,18 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  color: #ffffff;
 }
 
 .booking__form-btn-submit {
   padding: 16px 50px;
   width: 300px;
   align-self: flex-end;
-  background-color: #ffffff;
+  background-color: var(--primary-color);
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #6c0287;
+  color: var(--tertiary-color);
   border: 3px solid transparent;
   border-radius: 10px;
   transition-property: border-color, background-color;
@@ -271,7 +268,7 @@
 
 .booking__form-btn-submit:hover {
   background-color: #eadeed;
-  border-color: #6c0287;
+  border-color: var(--tertiary-color);
 }
 
 .booking__form-btn-submit:active {
@@ -280,5 +277,5 @@
 }
 
 .booking__form-btn-submit:focus {
-  border-color: #6c0287;
+  border-color: var(--tertiary-color);
 }

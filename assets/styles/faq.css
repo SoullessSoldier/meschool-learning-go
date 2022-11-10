@@ -30,30 +30,34 @@
 }
 
 .section-faq__list-item:nth-child(odd) {
-  background-color: #fff;
-  color: #6c0287;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+
+.section-faq__list-item:nth-child(odd) .section-faq__list-item-text {
+  color: var(--dark-color);
 }
 
 .section-faq__list-item:nth-child(odd):hover .section-faq__list-item-icon {
-  background-color: #6c0287;
+  background-color: var(--tertiary-color);
 }
 
 .section-faq__list-item:nth-child(odd):hover .section-faq__list-item-icon-path {
-  color: #fff;
+  color: var(--primary-color);
 }
 
 .section-faq__list-item:nth-child(even) {
-  background-color: #440f51;
-  color: #fff;
+  background-color: var(--bg-secondary-color);
+  color: var(--primary-color);
 }
 
 .section-faq__list-item:nth-child(even):hover .section-faq__list-item-icon {
-  background-color: #ffffff;
+  background-color: var(--primary-color);
 }
 
 .section-faq__list-item:nth-child(even):hover
   .section-faq__list-item-icon-path {
-  color: #6c0287;
+  color: var(--tertiary-color);
 }
 
 .section-faq__list-item:active .section-faq__list-item-icon-hiding-path {

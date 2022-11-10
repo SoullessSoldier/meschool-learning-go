@@ -52,7 +52,6 @@
 .contacts__item-link {
   margin: 0;
   padding: 0;
-  color: #fff;
   text-decoration: none;
   vertical-align: middle;
 }
@@ -110,7 +109,7 @@
 .footer__link {
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: var(--primary-color);
   text-decoration: none;
   vertical-align: middle;
 }
@@ -136,7 +135,7 @@
 
 .socials-list__link {
   display: block;
-  color: #fff;
+  color: var(--primary-color);
   text-decoration: none;
   border: 1px solid transparent;
   transition-property: color, border-color;
@@ -146,11 +145,11 @@
   color: #eadeed;
 }
 .socials-list__link:active svg {
-  color: #cd06ff;
+  color: var(--secondary-color);
 }
 .socials-list__link:focus {
   color: #eadeed;
-  border-color: #cd06ff;
+  border-color: var(--secondary-color);
 }
 
 .footer__credits {

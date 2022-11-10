@@ -14,8 +14,8 @@ body {
   min-height: 100vh;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  background-color: #1b1a1b;
-  color: #fff;
+  background-color: var(--bg-primary-color);
+  color: var(--primary-color);
 }
 
 ul {
@@ -92,5 +92,5 @@ button,
 }
 
 .border-bottom-white:hover {
-  border-bottom-color: #ffffff;
+  border-bottom-color: var(--primary-color);
 }

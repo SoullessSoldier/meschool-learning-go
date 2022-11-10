@@ -1,3 +1,7 @@
+.section.features {
+  padding-bottom: 170px;
+}
+
 .features__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -11,9 +15,23 @@
   display: inline-block;
   transition-property: transform;
 }
+/*
+.features__card:nth-child(3n),
+.features__card:nth-child(3n + 1) {
+  transform: translateY(-19px);
+}*/
 
-.features__card:hover {
+.features__card:nth-child(3n + 2) {
+  transform: translateY(70px);
+}
+
+.features__card:nth-child(3n):hover,
+.features__card:nth-child(3n + 1):hover {
   transform: scale(1.1);
+}
+
+.features__card:nth-child(3n + 2):hover {
+  transform: scale(1.1) translateY(70px);
 }
 
 .features__card-image {

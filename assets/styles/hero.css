@@ -49,7 +49,7 @@
 }
 
 .hero__feature-title {
-  color: #cd06ff;
+  color: var(--secondary-color);
   font-size: 75px;
   font-weight: 900;
   line-height: 106px;
@@ -70,8 +70,8 @@
   padding: 25px 69px;
   font-size: 26px;
   font-weight: 700;
-  background-color: #6c0287;
-  color: #fff;
+  background-color: var(--tertiary-color);
+  color: inherit;
   border: 0;
   outline: 1px solid transparent;
   text-decoration: none;
@@ -94,7 +94,7 @@
   position: absolute;
   left: calc(50% - 30px);
   bottom: 90px;
-  color: #fff;
+  color: inherit;
   text-decoration: none;
   outline: 1px solid transparent;
   transition-property: outline-color;
@@ -102,7 +102,7 @@
 
 .hero__link-down-icon {
   fill: none;
-  color: #fff;
+  color: inherit;
   transition-property: color;
 }
 
@@ -111,23 +111,23 @@
 }
 
 .hero__link-down-icon:hover {
-  fill: #fff;
-  color: #6c0287;
+  fill: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
 .hero__link-down-icon:hover .hero__link-down-icon-circle {
-  color: #fff;
+  color: var(--primary-color);
 }
 
 .hero__link-down-icon:active {
-  fill: #6c0287;
-  color: #fff;
+  fill: var(--tertiary-color);
+  color: var(--primary-color);
 }
 
 .hero__link-down-icon:active .hero__link-down-icon-circle {
-  color: #6c0287;
+  color: var(--tertiary-color);
 }
 
 .hero__link-down:focus {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--secondary-color);
 }

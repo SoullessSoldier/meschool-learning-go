@@ -21,30 +21,30 @@
 }
 
 .nav__link {
-  color: #fff;
+  color: inherit;
   text-decoration: none;
 }
 
 .btn-order-call {
   padding: 12px 32px;
-  background-color: #1b1a1b;
+  background-color: var(--bg-primary-color);
   font-size: 22px;
   font-weight: 700;
-  color: #fff;
-  border: 3px solid #cd06ff;
+  color: inherit;
+  border: 3px solid var(--secondary-color);
   transition-property: background-color, border-color;
 }
 
 .btn-order-call:hover {
-  background-color: #6c0287;
-  border-color: #6c0287;
+  background-color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
 }
 
 .btn-order-call:active {
   background-color: #640aa3;
-  border-color: #000000;
+  border-color: var(--black-color);
 }
 
 .btn-order-call:focus {
-  background-color: #6c0287;
+  background-color: var(--tertiary-color);
 }

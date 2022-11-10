@@ -42,7 +42,7 @@
   font-size: 44px;
   line-height: 114%;
   text-transform: uppercase;
-  color: #6c0287;
+  color: var(--tertiary-color);
 }
 
 .section-about__blockquote:before {
