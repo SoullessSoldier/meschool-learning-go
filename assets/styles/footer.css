@@ -1,5 +1,9 @@
+.footer {
+  padding: 0;
+}
+
 .footer-wrapper {
-  margin-bottom: 155px;
+  margin-bottom: 152px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,6 +11,7 @@
 }
 
 .footer__map-wrapper {
+  padding-top: 6px;
   width: 680px;
   height: 274px;
   overflow: hidden;
@@ -17,6 +22,10 @@
   object-fit: cover;
   object-position: 100% -29px;
 }
+
+/* .footer__content-wrapper {
+  padding-top: 10px;
+} */
 
 .address {
   margin: 0 0 38px;
@@ -64,7 +73,7 @@
 .footer__contact {
   position: relative;
   margin: 0;
-  padding: 0 0 0 65px;
+  padding: 0 0 0 61px;
   font-weight: 700;
   font-size: 24px;
   line-height: 117%;
@@ -73,7 +82,7 @@
 
 .footer__contact::before {
   content: "";
-  width: 34px;
+  width: 32px;
   height: 32px;
   display: block;
   position: absolute;
@@ -100,10 +109,12 @@
 
 .footer__contact_type_phone::before {
   background-image: url("../images/phone_call.svg");
+  background-size: cover;
 }
 
 .footer__contact_type_email::before {
   background-image: url("../images/envelope.svg");
+  background-size: cover;
 }
 
 .footer__link {
@@ -124,7 +135,7 @@
 }
 
 .socials-list__item {
-  margin: 0 26px 0 0;
+  margin: 0 25px 0 0;
   padding: 0;
   display: inline-block;
 }
@@ -165,6 +176,7 @@
 .footer__author-paragraph {
   margin: 0 0 6px;
   padding: 0;
+  font-size: 14px;
 }
 
 .footer__author {
@@ -173,4 +185,28 @@
 
 .footer__author-paragraph:last-child {
   margin: 0;
+}
+
+@media (max-width: 1300px) {
+  .footer-wrapper {
+    margin-bottom: 92px;
+    align-items: flex-start;
+  }
+  .footer__contact {
+    padding-left: 39px;
+  }
+  .footer__contact::before {
+    width: 26px;
+    height: 26px;
+  }
+  .socials-list__link-icon {
+    width: 41px;
+    height: 41px;
+  }
+  .footer__map-wrapper {
+    padding-top: 6px;
+    width: 542px;
+    height: 274px;
+    overflow: hidden;
+  }
 }

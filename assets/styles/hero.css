@@ -28,7 +28,7 @@
 }
 
 .hero__subtext {
-  margin: 0 0 30px 100px;
+  margin: 0 0 5px 100px;
   font-weight: 400;
   font-size: 28px;
   line-height: 179%;
@@ -36,11 +36,11 @@
 
 .hero__features {
   display: flex;
-  gap: 40px;
+  gap: 22px;
 }
 
 .hero__feature {
-  padding: 25px 0 150px;
+  padding: 25px 0 175px;
   max-width: 195px;
   display: flex;
   flex-direction: column;
@@ -50,9 +50,9 @@
 
 .hero__feature-title {
   color: var(--secondary-color);
-  font-size: 75px;
+  font-size: 62px;
   font-weight: 900;
-  line-height: 106px;
+  line-height: 92px;
   text-transform: uppercase;
 }
 
@@ -92,8 +92,8 @@
 
 .hero__link-down {
   position: absolute;
-  left: calc(50% - 30px);
-  bottom: 90px;
+  left: calc(50% - 52px);
+  bottom: 86px;
   color: inherit;
   text-decoration: none;
   outline: 1px solid transparent;
@@ -130,4 +130,68 @@
 
 .hero__link-down:focus {
   outline: 1px solid var(--secondary-color);
+}
+
+@media (max-width: 1300px) {
+  .hero {
+    padding-top: 15px;
+    padding-bottom: 40px;
+  }
+  .hero .container {
+    min-height: 583px;
+  }
+  .hero .container::before {
+    width: 453px;
+    height: 520px;
+    bottom: 0;
+    right: 60px;
+  }
+  .hero__text {
+    font-size: 120px;
+  }
+
+  .hero__subtext {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .hero__features {
+    gap: 22px;
+  }
+
+  .hero__feature {
+    padding-bottom: 80px;
+    max-width: 170px;
+  }
+
+  .hero__feature-title {
+    font-size: 60px;
+    line-height: 141%;
+  }
+
+  .hero__feature-title_font_size_100 {
+    font-size: 80px;
+    line-height: 141%;
+  }
+
+  .hero__feature-text {
+    font-size: 26px;
+    line-height: 115%;
+  }
+
+  .btn-booking {
+    margin-left: 39px;
+    padding: 17px 48px;
+    font-size: 22px;
+    line-height: 115%;
+  }
+  .hero__link-down {
+    left: calc(50% - 33px);
+    bottom: 42px;
+  }
+  .hero__link-down-icon {
+    width: 67px;
+    height: 67px;
+  }
 }

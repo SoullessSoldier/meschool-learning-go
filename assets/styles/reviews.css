@@ -1,5 +1,13 @@
+.section-reviews {
+  padding-bottom: 98px;
+}
+
 .container-reviews {
-  padding: 0 100px;
+  padding: 0 128px;
+}
+
+.section-reviews .block-title {
+  margin-bottom: 46px;
 }
 
 .section-reviews__guest-list {
@@ -64,6 +72,7 @@
 }
 
 .section-reviews__guest-figure-figcaption {
+  padding-top: 12px;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -73,8 +82,34 @@
 
 .section-reviews__guest-description {
   margin: 0;
-  padding: 50px 0 0 0;
+  padding: 53px 0 0 0;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
+}
+
+@media (max-width: 1300px) {
+  .section-reviews {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .section-reviews__guest-figure-image-wrapper {
+    width: 172px;
+    height: 172px;
+  }
+  .section-reviews__guest-figure-image {
+    width: 172px;
+    height: 172px;
+  }
+  .section-reviews__guest-figure-image-2 {
+    object-position: 100% -28px;
+  }
+  .section-reviews__guest-figure-image-3 {
+    object-position: 100% -53px;
+  }
+  .section-reviews__guest-figure-figcaption,
+  .section-reviews__guest-description {
+    font-size: 18px;
+    line-height: 144%;
+  }
 }

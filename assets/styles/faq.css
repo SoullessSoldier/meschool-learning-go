@@ -1,3 +1,7 @@
+.section-faq .block-title {
+  margin-bottom: 45px;
+}
+
 .section-faq__list {
   margin: 0;
   padding: 0;
@@ -63,4 +67,19 @@
 .section-faq__list-item:active .section-faq__list-item-icon-hiding-path {
   transform-origin: 51% 53%;
   transform: rotate(90deg);
+}
+
+@media (max-width: 1300px) {
+  .section-faq {
+    padding: 35px 0 60px;
+  }
+  .section-faq .block-title {
+    margin-bottom: 26px;
+  }
+  .section-faq__list-item {
+    padding: 23px 20px 23px 25px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 120%;
+  }
 }

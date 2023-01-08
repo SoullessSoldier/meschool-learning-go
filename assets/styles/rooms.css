@@ -1,36 +1,44 @@
+.rooms .block-title {
+  margin-bottom: 48px;
+}
+
 .rooms__list {
   margin: 0;
   padding: 0;
-  display: flow-root;
+  /*display: flow-root;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
   list-style: none;
 }
 
 .rooms__item {
-  margin: 0 0 20px;
+  /* margin: 0 0 20px; */
   /*padding: 275px 445px;
   width: 100%;*/
-  padding: 135px 60px;
-  width: 49%;
+  padding: 95px 160px;
+  /* width: 49%; */
   /*height: 710px;*/
   display: inline-block;
   /*position: relative;*/
   text-align: center;
 }
-.rooms__item:nth-child(2n){
+/*
+.rooms__item:nth-child(2n) {
   float: right;
 }
 
-.rooms__item:not(:nth-child(2n)){
+.rooms__item:not(:nth-child(2n)) {
   float: left;
   margin-right: 20px;
 }
 
 .rooms__item:last-child,
-.rooms__item:nth-last-child(2){
+.rooms__item:nth-last-child(2) {
   margin-bottom: 0;
-}
+}*/
 
-.rooms__text{
+.rooms__text {
   margin: 0 auto;
   padding: 0;
   display: inline-block;
@@ -39,7 +47,6 @@
   line-height: 114%;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .rooms__item_vibes {
@@ -55,4 +62,18 @@
 }
 .rooms__item_neonstyle {
   background: url("../images/hall_4_neon.jpg") no-repeat center/cover;
+}
+
+@media (max-width: 1300px) {
+  .section.rooms {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+  .rooms__item {
+    padding: 72px 95px;
+  }
+  .rooms__text {
+    font-size: 50px;
+    line-height: 120%;
+  }
 }

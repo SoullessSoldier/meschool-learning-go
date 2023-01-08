@@ -1,8 +1,9 @@
 *,
 *:before,
 *:after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  /* outline: none; */
 }
 
 html {
@@ -22,7 +23,13 @@ ul {
   list-style: none;
 }
 /*For one craziest browser*/
-figure {
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
@@ -93,4 +100,17 @@ button,
 
 .border-bottom-white:hover {
   border-bottom-color: var(--primary-color);
+}
+
+@media (max-width: 1300px) {
+  .container {
+    padding: 0 60px;
+    max-width: 1024px;
+  }
+  .block-title {
+    padding: 0 130px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 133%;
+  }
 }

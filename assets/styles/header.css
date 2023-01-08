@@ -26,7 +26,7 @@
 }
 
 .btn-order-call {
-  padding: 12px 32px;
+  padding: 12px 31px 13px 31px;
   background-color: var(--bg-primary-color);
   font-size: 22px;
   font-weight: 700;
@@ -47,4 +47,26 @@
 
 .btn-order-call:focus {
   background-color: var(--tertiary-color);
+}
+
+@media (max-width: 1300px) {
+  .header {
+    padding-bottom: 15px;
+  }
+  .header__logo {
+    height: 55px;
+    width: auto;
+  }
+  .nav__list {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .nav__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .btn-order-call {
+    padding: 10px 26px 11px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

@@ -48,3 +48,30 @@
   line-height: 28px;
   font-weight: 700;
 }
+
+@media (max-width: 1300px) {
+  .section.features {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .features__wrapper {
+    gap: 30px 20px;
+  }
+  .features__card {
+    width: 285px;
+    height: 170px;
+  }
+  .features__card:nth-child(3n + 2) {
+    transform: translateY(50px);
+  }
+  .features__card:nth-child(3n + 2):hover {
+    transform: scale(1.1) translateY(50px);
+  }
+  .features__card-title {
+    padding: 0px 20px 6px;
+    height: 55px;
+  }
+  .features__card-title_multiline {
+    height: 82px;
+  }
+}
