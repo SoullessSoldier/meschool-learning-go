@@ -65,6 +65,9 @@
 }
 
 @media (max-width: 1300px) {
+  .rooms .block-title {
+    margin-bottom: 37px;
+  }
   .section.rooms {
     padding-top: 60px;
     padding-bottom: 70px;
@@ -75,5 +78,22 @@
   .rooms__text {
     font-size: 50px;
     line-height: 120%;
+  }
+}
+
+@media (max-width: 992px) {
+  .rooms .block-title {
+    margin-bottom: 35px;
+  }
+  .section.rooms {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .rooms__item {
+    padding: 60px 102px 40px;
+  }
+  .rooms__text {
+    font-size: 40px;
+    line-height: 125%;
   }
 }
